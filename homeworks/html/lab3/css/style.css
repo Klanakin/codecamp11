@@ -1,0 +1,73 @@
+textarea {
+    resize: vertical;
+}
+input[type=submit]{
+    font-family: serif;
+}
+select{
+    font-family: serif;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-image: url(../img/pizza-3007395_1280.jpg);
+    background-size: cover;
+    font-size: 1.6rem;
+}
+.container {
+    background-color: rgba(245, 245, 245, 0.9);
+    display: grid;
+    grid-template-areas: "header header" "name name_input" "topping topping_input" "sauce sauce_input" "extras extras_input" "instructions instructions" "send send";
+    border-style: solid;
+    border-color: #888;
+    border-width: .1rem;
+    font-family: serif;
+    padding: .2rem;
+    grid-gap: .2rem;
+    width: 50rem;
+    margin: 10rem auto;
+}
+.container > * {
+    border-style: solid;
+    border-width: .1rem;
+    border-color: #888;
+    padding: .3rem;
+}
+.header {
+    display: flex;
+    grid-area: header;
+    justify-content: center;
+}
+.name {
+    grid-area: name;
+}
+.name_input {
+    grid-area: name_input;
+}
+.topping {
+    display: flex;
+    align-items: center;
+    grid-area: topping;
+}
+.topping_input {
+    grid-area: topping_input;
+}
+.sauce {
+    grid-area: sauce;
+}
+.sauce_input {
+    grid-area: sauce_input;
+}
+.extras {
+    grid-area: extras;
+}
+.extras_input {
+    grid-area: extras_input;
+}
+.instructions {
+    grid-area: instructions;
+}
+.send {
+    grid-area: send;
+}

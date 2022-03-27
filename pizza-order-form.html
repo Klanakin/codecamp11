@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.svg">
+    <link rel="stylesheet" href="homeworks/html/lab3/css/style.css">
+    <title>DK | Pizza Shop 2.0</title>
+</head>
+<body>
+    <form onsubmit="event.preventDefault()">
+        <div class="container">
+          <div class="header">Pizza Shop 2.0</div>
+          <div class="name">Name</div>
+          <div class="name_input">
+            <input type="text" name="firstname">
+          </div>
+          <div class="topping">Pizza Topping</div>
+          <div class="topping_input">
+            <input type="radio" name="topping" value="Supreme">Supreme</input><br>
+            <input type="radio" name="topping" value="Vegetarian">Vegetarian</input><br>
+            <input type="radio" name="topping" value="Hawaiian">Hawaiian</input><br>
+          </div>
+          <div class="sauce">Pizza Sauce</div>
+          <div class="sauce_input">
+            <select name="sauce">
+              <option value="tomato">Tomato</option>
+              <option value="barbeque">Barbeque</option>
+              <option value="mayonnaise">Mayonnaise</option>
+              <option value="secret">Secret sauce</option>
+            </select>
+          </div>
+          <div class="extras">Optinal Extras</div>
+          <div class="extras_input">
+            <input type="checkbox" name="extra_cheese" value="1">Extra Cheese</input>
+            <input type="checkbox" name="gluten_free" value="1">Gluten Free Base</input>
+          </div>
+          <div class="instructions">
+            Deliver instruction:
+            <br>
+            <textarea name="delivery" cols="60px" rows="4"></textarea>
+          </div>
+          <div class="send">
+            <input type="submit" value="Send my Oder">
+          </div>
+        </div>
+      </form>
+</body>
+</html>
